@@ -1,0 +1,350 @@
+/* Estilos generales */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Header */
+
+.header {
+    height: 616px;
+    background-color: #fafafa;
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-container__logo {
+    height: 50px;
+    width: 50px;
+}
+
+.header-container__logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.header-container__nav i {
+    font-size: 30px;
+}
+
+.header-container__nav ul {
+    display: none;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-content h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.header-content__foto img {
+    width: 300px;
+    height: 300px;
+}
+
+/* Main */
+
+/* Seccion quien soy */
+
+.seccion {
+    background-color: #141414;
+    color: #fafafa;
+    height: 538px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px;
+}
+
+.seccion-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.seccion-check img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Seccion servicios */
+
+.seccion2 {
+    background-color: #fafafa;
+    height: 1275px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.seccion2 h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.seccion2-content {
+    display: flex;
+    flex-direction: column;
+    gap: 105px;
+}
+
+.seccion2-content__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 300px;
+    width: 300px;
+}
+
+.seccion2-content__card h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.seccion2-content__card p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.seccion2-content__card img {
+    width: 130px;
+    height: 130px;
+}
+
+/* Seccion escribime */
+
+.seccion3 {
+    background-color: #141414;
+    color: #fafafa;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.seccion3 h3 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.seccion3-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.seccion3-content__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.seccion3-content__form label {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.seccion3-content__form input {
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.seccion3-content__form textarea {
+    height: 120px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.seccion3-content__form button {
+    font-size: 16px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FFD953;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.seccion3-content__form button:hover {
+    background-color: transparent;
+    border: 2px solid #FFD953;
+    color: #FFD953;
+}
+
+/* Footer */
+.footer {
+    background-color: #DBDBDB;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-content img {
+    height: 77px;
+    width: 77px;
+}
+
+.footer-content p {
+    font-size: 15px;
+}
+
+.footer-redes ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.footer-redes ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.footer-redes ul li i {
+    font-size: 20px;
+}
+
+
+/* Media queries */
+
+@media (min-width: 768px) {
+    /* Header */
+
+    .header-container__logo img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .header-container__nav i {
+        display: none;
+    }
+
+    .header-container__nav ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .header-content {
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .header-content h1 {
+        font-size: 35px;
+    }
+
+    .header-content__foto img {
+        width: 400px;
+        height: 400px;
+    }
+    
+
+    /* Main */
+
+    /* Seccion quien soy */
+    .seccion {
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .seccion-content {
+        align-items: start;
+        padding: 40px;
+        width: 50%;
+    }
+
+    .seccion-content h2 {
+        font-size: 40px;
+    }
+
+    .seccion-check img {
+        width: 211px;
+        height: 211px;
+    }
+
+    /* Seccion servicios */
+    .seccion2 {
+        height: 604px;
+    }
+
+    .seccion2-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /* Seccion escribime */
+    .seccion3 {
+        align-items: center
+    }
+
+    .seccion3-content {
+        flex-direction: row;
+        align-items: start;
+        padding: 20px;
+    }
+
+    .seccion3-content__form {
+        width: 376px;
+    }
+
+    /* Footer */
+    .footer {
+        align-items: center;
+        flex-direction: row;
+    }
+}
